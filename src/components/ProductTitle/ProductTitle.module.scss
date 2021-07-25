@@ -1,0 +1,10 @@
+.product-title {
+  h1 {
+    font-size: 1.875em;
+    margin-bottom: 1.25rem;
+
+    @media (min-width: 768px) {
+      margin-top: 0;
+    }
+  }
+}

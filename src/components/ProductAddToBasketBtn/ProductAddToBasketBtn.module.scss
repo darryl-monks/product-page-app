@@ -1,0 +1,17 @@
+.add-to-basket-btn {
+  button {
+    width: 100%;
+    color: #fff;
+    padding: 1em;
+    border-radius: 0.25em;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    box-shadow: 0 0.25em 0.5em var(--shadow);
+    transition: 0.2s;
+
+    &:hover {
+      background-color: var(--primary-color-darken);
+      box-shadow: 0 0.5em 0.5em var(--shadow);
+    }
+  }
+}
