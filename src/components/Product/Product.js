@@ -36,7 +36,7 @@ export default function Product() {
 
   async function setProductData() {
     try {
-      const response = await fetch("data/product.json");
+      const response = await fetch("product-page-app/data/product.json");
       const productData = await response.json();
       const { title, colours } = productData.product;
       const { image } = colours.find((color) => color.defaultImage === true);
