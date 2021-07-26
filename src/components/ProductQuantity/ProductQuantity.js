@@ -15,9 +15,18 @@ export default function ProductQuantity() {
         value={quantity}
         min="1"
         max="99"
+        pattern="[0-9]*"
         required="required"
         onChange={(event) => {
           setQuantity(event.target.value);
+        }}
+        onBlur={(event) => {
+          const value = event.target.value;
+          if (value === "") {
+            setQuantity(1);
+          } else {
+            setQuantity(value);
+          }
         }}
         data-testid="product-quantity"
       />
